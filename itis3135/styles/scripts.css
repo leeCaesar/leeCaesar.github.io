@@ -8,7 +8,7 @@ html, body {
 .nav li {
 	display: inline;
 	font-size: 12px;
-	padding: 0 5%;
+	padding: 0 1%;
 }
 .nav a {
 	text-decoration: none;

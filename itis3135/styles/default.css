@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    color: rgba(0,0,0, .6);
+    font-family: "Arial";
+    font-size: "18px";
+    text-align: center;
+    }
+.header {
+    background-size: cover;
+    font-size: 1.1em;
+    padding-bottom: 30px;
+}
+.header-size {
+    font-size: 1.5em;
+}
+.nav li {
+    display: inline;
+    font-size: 12px;
+    padding: 0 1%;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: rgba(0,0,0, .3);
+}
+.main {
+    margin: 1em;
+}
+.container {
+	max-width: 900px;
+	margin : auto;
+	padding: 0 1.1em;
+}
+.calulator {
+    position: relative;
+}
+.input {
+    width: 200px;
+    height: 50px; 
+    padding: .2em;
+}
+.input-function {
+    border: black;
+	border-radius: .2em;
+	font-weight: solid;
+    margin-bottom: 40px;
+}
+.btn {
+    width: 75px;
+    height: 50px; 
+    padding: .2em;
+	cursor: pointer;
+}
+.btn-function {
+    color: white;
+	background-color: #9c9c9c;
+	border: black;
+	border-radius: .3em;
+	font-weight: solid;
+    margin-bottom: 20px;
+}
+.calulator btn :hover {
+    background-color: rgba(0,0,0, .3);
+}
+.made-by p {
+    display: inline;
+}
