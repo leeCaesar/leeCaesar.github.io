@@ -33,8 +33,7 @@ html, body {
 	padding-bottom: 30px;
 }
 .Website-name {
-	text-align: center;
-	margin: 0;
+	margin: center;
 	font-size: 3em;
 	font-family: "Arial";
 	font-weight: normal;

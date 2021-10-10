@@ -48,8 +48,21 @@ body {
 	font-weight: solid;
     margin-bottom: 40px;
 }
+.results h3{
+    display: inline;
+    padding: 0 2%;
+}
+.h3style1 {
+    font-size: .8em;
+}
+.h3style2 {
+    font-size: .8em;
+}
+.h3style3 {
+    font-size: .8em;
+}
 .btn {
-    width: 75px;
+    width: 100px;
     height: 50px; 
     padding: .2em;
 	cursor: pointer;
@@ -61,6 +74,41 @@ body {
 	border-radius: .3em;
 	font-weight: solid;
     margin-bottom: 20px;
+}
+.btn-function:hover {
+    background-color: #01456d;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdowm-btn {
+  background-color: #9c9c9c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 .calulator btn :hover {
     background-color: rgba(0,0,0, .3);
