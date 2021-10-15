@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Caesar-Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+  <h1>Candle Delight</h1>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th >TYPE</th>
+          <th >PRODUCT</th>
+          <th >FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img src="C:\Users\leec3\Documents\itis3135_work\leeCaesar.github.io\itis3135\itis3135\accessibility\Birthday-Candles.jpg" width="75" height="50"></td>
+          <td>
+			  <ol>
+				<li>Come in range of colors, shapes, and letters</li>
+				<li>Small so you can fit as many as you want on even smaller cakes</li>
+				<li>Allow for a personal customization of cakes for a range of celebration types</li>
+			  </ol>
+		  </td>
+        </tr>
+        <tr>
+            <th>Votives</th>
+            <td><img src="C:\Users\leec3\Documents\itis3135_work\leeCaesar.github.io\itis3135\itis3135\accessibility\voltives.jpg" width="50" height="65"></td>
+            <td>
+				<ol>
+				<li>Inexpensive and easily usable</li>
+				<li>Loarge size provides a longer burn time perfect for long events</li>
+			  </ol>
+			</td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img src="C:\Users\leec3\Documents\itis3135_work\leeCaesar.github.io\itis3135\itis3135\accessibility\taper-candles.jpg" width="50" height="65"></td>
+              <td>			  
+				<ol>
+					<li>You may know them as the window candles</li>
+					<li>Long, and slender to add dimension to table tops</li>
+				  </ol>
+			  </td>
+           </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+	 <form action="#">
+		<label for="name">Name:</label>
+		<input for="name" type="text" autocomplete="name" aria-required="true">
+		<label for="Phone">Phone number:</label>
+		<input for="Phone" type="text" autocomplete="name" aria-required="true"></br>
+		<input class="submit-button"type="submit" name="submit" value="Submit" action="#">
+	 </form>
+    
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
