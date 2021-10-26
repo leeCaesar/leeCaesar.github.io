@@ -1,0 +1,61 @@
+html, body {
+	padding: 0px;
+	margin: 20px;
+    font-family: "Arial";
+    background-color: rgba(197, 197, 197, 0.6);
+	text-align: center;
+}
+.nav li {
+	display: inline;
+	font-size: 12px;
+	padding: 0 1%;
+}
+.nav a {
+	text-decoration: none;
+}
+.nav a:hover {
+	background-color: rgba(0,0,0, .3);
+}
+.header {
+    background-size: cover;
+	padding-bottom: 30px;
+}
+.page-header {
+    text-align: center;
+	margin: 5px;
+	font-size: 2.2em;
+	font-weight: normal;
+	background-color: rgba(78, 78, 78, 0.6);
+}
+.section-header {
+    text-align: left;
+	margin: 15px;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+.section {
+    padding: 5px;
+}
+.div {
+    display: inline;
+}
+.btn {
+    width: 200px;
+    height: 50px; 
+    padding: .2em;
+	cursor: pointer;
+}
+.btn-function {
+    color: white;
+	background-color: #0cb8f1;
+	border: black;
+	border-radius: .3em;
+	font-weight: solid;
+    margin-bottom: 20px;
+}
+.btn-function:hover {
+    background-color: #01456d;
+}
+.made-by p{
+    display: inline;
+}

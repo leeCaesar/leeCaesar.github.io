@@ -1,0 +1,41 @@
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+.nav ul {
+	margin: 0px;
+}
+.nav li {
+	display: inline;
+	padding: 0 5%;
+}
+.nav a {
+	display: inline-block;
+	padding: .6em;
+	color: white;
+	text-decoration: none;
+}
+.nav {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.nav a:hover {
+	background-color: rgba(255,255,255, .3);
+}
+.main-header {
+	background-color: rgba(255,255,255, .9);
+	background-image: url("C:\Users\leec3\Downloads\main-header.png");
+	background-blend-mode: multiply;
+	background-size: cover;
+	padding-bottom: 30px;
+}
+.Website-name {
+	margin: center;
+	font-size: 3em;
+	font-family: "Arial";
+	font-weight: normal;
+	color: white;
+}

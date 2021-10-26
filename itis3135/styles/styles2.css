@@ -1,0 +1,67 @@
+/*#87BBA2(lightblue) #CA2E55(red) #BDB246(gold)*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Playfair+Display:wght@900&display=swap');
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+.header-image {
+	left: fixed;
+	margin: 10px;
+	border-radius: 50%;
+}
+.company-name-header {
+	display: inline;
+	padding: 0 5%;
+	font-family: Kanit;
+	color: #CA2E55;
+}
+.main-header {
+	text-align: center;
+	background: linear-gradient(90deg, #CA2E55, #FAF2A1, #87BBA2, #BDB246);
+	background-size: cover;
+	padding-bottom: 30px;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.1em;
+}
+.section-header {
+	padding: 0 5%;
+	font-family: Kanit;
+	color: #CA2E55;
+}
+.section-content {
+	margin: 1em;
+	font-family: Playfair;
+	color: #CA2E55;
+}
+.list li{
+	color: #CA2E55;
+	font-size: .7em;
+}
+.contact {
+	display: inline-block;
+	padding: 0 5%;
+}
+.contact a {
+	display: inline-block;
+	padding: .6em;
+	text-decoration: none;
+}
+.contact a:hover {
+	background-color: rgba(255,0,0, .3);
+}
+.footer-content {
+	text-align: center;
+	background: linear-gradient(45deg, #CA2E55, #BDB246, #FAF2A1, #87BBA2);
+	background-size: cover;
+	padding-bottom: 30px;
+}
+.created-by {
+	display: inline;
+	font-family: Kanit;
+	font-size: .5em;
+	color: #CA2E55;
+}	
