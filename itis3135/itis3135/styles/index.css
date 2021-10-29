@@ -1,0 +1,75 @@
+html, body {
+    padding-bottom: 5px;
+    margin: 5%;
+    font-family: Tahoma;
+}
+.main-header {
+    text-align: center;
+    background: linear-gradient(45deg, #CA2E55, #BDB246, #FAF2A1, #87BBA2);
+    background-size: cover;
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
+.header {
+    font-size: 2em;
+    position: relative;
+    color: black;
+}
+.nav a {
+	display: inline-block;
+	padding: .6em;
+	color: rgb(175, 0, 0);
+	text-decoration: none;
+    margin-left: 20px;
+    font-size: .6em;
+}
+.nav a:hover {
+    color: rgb(253, 0, 0);
+    background: linear-gradient(45deg, #292361, #000000);
+    cursor: pointer;
+}
+.nav h4 {
+    color: rgb(153, 15, 38);
+}
+.img {
+    border-radius: 50%;
+    border-color: black;
+    display: inline-block;
+}
+.placeholder-text {
+    font-size: .8em;
+}
+.links-header {
+    font-size: 1.2em;
+    border-bottom: black;
+    border-width: 2px;
+}
+.links li {
+    padding: 0 5%;
+}
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    color: blueviolet;
+}
+.links a:hover {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #CA2E55, #BDB246, #FAF2A1, #87BBA2);
+    cursor: pointer;
+}
+.footer-content {
+	text-align: center;
+	background: linear-gradient(45deg, #CA2E55, #BDB246, #FAF2A1, #87BBA2);
+	background-size: cover;
+	padding-bottom: 30px;
+}
+.created-by {
+	display: inline;
+	font-family: Kanit;
+	font-size: .5em;
+	color: #CA2E55;
+}
+.validator {
+    padding: 2%;
+    text-align: center;
+}	
