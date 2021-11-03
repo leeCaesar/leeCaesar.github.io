@@ -2,17 +2,37 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="Activity.css" type="text/css" >
+<!--		<link rel="stylesheet" href="Activity.css" type="text/css" > -->
 		<title> HTML Tables lcaesar</title>
 	</head>
 	<style>
-		table li:nth-child(odd) {
-			background-color: #999;
-			color: #fff
+		body{
+			width: 750px;
+			margin: 0 auto;
 		}
-		table li:nth-child(even) {
-			background-color: #777;
-			color: #fff
+		table
+		{
+			border-collapse: collapse;
+			margin: 20px;
+		}
+		thead
+		{
+			background-color: green;
+		}
+		th, td
+		{
+			border: 1px solid black;
+			padding: .2em 1em .2em .5em;
+			text-align: left;
+			vertical-align: middle;
+		}
+		.right
+		{
+			text-align: right;
+		}
+			tbody tr:nth-child(odd) td
+		{
+			background-color: lightgreen;
 		}
 	</style>
 	<body>

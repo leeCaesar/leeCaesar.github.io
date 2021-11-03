@@ -1,0 +1,21 @@
+html, body {
+	padding: 0px;
+	margin: 15px;
+    font-family: "Arial";
+    background-color: rgba(197, 197, 197, 0.6);
+	text-align: center;
+}
+.nav li {
+	display: inline;
+	font-size: 12px;
+	padding: 0 1%;
+}
+.nav a {
+	text-decoration: none;
+}
+.nav a:hover {
+	background-color: rgba(0,0,0, .3);
+}
+.made-by p{
+    display: inline;
+}
