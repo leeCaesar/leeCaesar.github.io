@@ -12,32 +12,34 @@
 <main>
     <h1>Weekly Calorie Calculator</h1>
     <!--add the form-->
-    <form id="your_details" name="your_details" action="#" >
+    <form id="your_details">
         <header>Enter Your details</header> <br />
         <label for="name">Your Name: </label>
-        <input type="text" id="name" name="name" value="enter your name">
+        <input type="text" id="name" name="name" placeholder="enter your name">
         <label for="email">Enter your email:</label>
-        <input type="text" id="email" name="email" value="enter your email">
-        <input class="btn" type="submit" value="Submit">
+        <input type="text" id="email" name="email" placeholder="enter your email">
+        <button class="btn" id="Submit" type="submit">Submit</button>
+        User Info: 
+        <p class="user-cal"></p>
     </form>
 
     <!--add the radio buttons-->
     <form>
         <header>Choose a day: </header>
         <label for="M">Monday</label>
-        <input type="radio" id="M" name="M" value="Monday">
+        <input type="checkbox" id="M" name="M" value="Monday">
         <label for="T">Tuesday</label>
-        <input type="radio" id="T" name="T" value="Tuesday">
+        <input type="checkbox" id="M" name="T" value="Tuesday">
         <label for="W">Wednesday</label>
-        <input type="radio" id="W" name="W" value="Wednesday">
+        <input type="checkbox" id="M" name="W" value="Wednesday">
         <label for="Th">Thursday</label>
-        <input type="radio" id="Th" name="Th" value="Thursday">
+        <input type="checkbox" id="M" name="Th" value="Thursday">
         <label for="F">Friday</label>
-        <input type="radio" id="F" name="F" value="Friday">
+        <input type="checkbox" id="M" name="F" value="Friday">
         <label for="S">Saturday</label>
-        <input type="radio" id="S" name="S" value="Saturday">
+        <input type="checkbox" id="M" name="S" value="Saturday">
         <label for="Su">Sunday</label>
-        <input type="radio" id="Su" name="Su" value="Sunday">
+        <input type="checkbox" id="M" name="Su" value="Sunday">
     </form>
 
     <!--input for calorie-->
@@ -54,7 +56,7 @@
         <input class="btn" type="button" id="add" value="Add Calorie">
     <!--text box for showing Average calorie-->
         <label for="avg">Average Calorie Consumed is...</label>
-        <input type="number" id="avg" name="avg" value="">
+        <input type="number" id="avg" name="avg">
     </form>
     <!--header for showing maximum calorie amount and cheat day-->
     <strong id="show_max">Show Maximum Calorie  and Cheat Day:</strong>

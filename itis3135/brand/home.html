@@ -4,18 +4,17 @@
 	<head>
 		<meta name="description" content="this is Activity 4" charset="utf-8"/>
 		<title>Brand page lcaesar</title>
-		<link rel="stylesheet" href="styles\styles2.css" />
+		<link rel="stylesheet" href="components/default.css" />
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
 	</head>
 	<body>
-		<header class="main-header">
-			<div>
-				<a href="components/header_footer.html"></a>
-			</div>
-			<img class="header-image" src="C:\Users\leec3\Documents\itis3135_work\leeCaesar.github.io\itis3135\images\chameleonhttpsfineartamerica.comfeaturedchameleon-splash-aged-pixel.html).png" alt="rainbow chameleon" width="56.25" height="56.25">
-			<h1 class="company-name-header">Limber Remote Chameleon Inc.</h1>
-
-		</header>
-		<section class="container">
+		<div class="main-header">
+			<div w3-include-html="components/header.html"></div>
+			<script>
+				w3.includeHTML();
+			</script>
+		</div>
+		<div class="container">
 			<h2 class="section-header">Brand page</h2>
 			<p class="section-content">Limber Remote Chameleon Inc. started in 1983 as a firm dedicated to producing new fonts and colors to be used in CSS.<br>
 				A web designer by the name of Lee Caesar started the company in his 4th year of college at UNC at charlotte. 
@@ -39,19 +38,19 @@
 			<p class="section-content">One of our misson statements, is to provide the entire population
 			with access to the internet in hopes to let everyone access the web and everyone be able to make their 
 			own websites<br>
-			Contact us any where here:
+			<p class="contact-header">Contact us any where here:</p>
 				<div class="contact">
 					<span class="address">9201 University City Blvd</span>
 					<span class="phone-number"><a href="">+1(800)-421-4421</a></span>
 					<span class="email"><a href="">chamachameleon@yahoo.com</a></span>
 				<div>
 			</p>
-		</section>
-		<footer class="footer-content">
-			<div class="container">
-			<span class="created-by ">Designed by Limber Remote Chameleon Inc.</span>
-			<img src="C:\Users\leec3\Documents\itis3135_work\leeCaesar.github.io\itis3135\itis3135\images\copyright-symbolCUsersleec3Documentsitis3135_workleeCaesar.github.ioitis3135imagescopyright-symbol.png.png" alt="Copyright" width="10" height="10">
-			</div>
-		</footer>
+		</div>
+		<div class="footer-content">
+			<div w3-include-html="components/footer.html">
+			<script>
+				w3.includeHTML();
+			</script>
+		</div>
 	</body>
 </html>

@@ -5,21 +5,38 @@ var $ = function(id) { return document.getElementById(id); };
 
 window.onload = function() {
     //event handlers
+    document.getElementById('Submit').onsubmit = displayUser;
+    function displayUser() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        document.getElementById('user-cal').innerHTML = name + ', your email:' + email + ' has been registered!';
+    }
     document.getElementById('update').onclick = updateCalorie;
     function updateCalorie() {
         var UserCalorie = document.getElementById('calorie').value;
-        var Monday = document.getElementsById('M');
-        var Tuesday = document.getElementById('T')
-        var Wednesday = document.getElementById('W')
-        var Thursday = document.getElementById('Th')
-        var Friday = document.getElementById('F')
-        var Saturday = document.getElementById('S')
-        var Sunday = document.getElementById('Su')
-        if (Monday.checked == true) {
+        var day = [document.getElementByName('M'), document.getElementByName('T'), document.getElementByName('W'), document.getElementByName('Th'), document.getElementByName('F'), document.getElementByName('S'), document.getElementByName('Su')];
+       /* var Tuesday = document.getElementById('T').checked
+        var Wednesday = document.getElementById('W').checked
+        var Thursday = document.getElementById('Th').checked
+        var Friday = document.getElementById('F').checked
+        var Saturday = document.getElementById('S').checked
+        var Sunday = document.getElementById('Su').checked  */
+        if (UserCalorie == 0) {
+            alert('Enter a valid number');
+        }
+        if (day[0] == true) {
             calories[0] = UserCalorie;
             alert("Your updated Calorie details are: " + calories);
         }
-        if (Tuesday.checked == true) {
+        
+        calories[1] = UserCalorie;
+        calories[2] = UserCalorie;
+        calories[3] = UserCalorie;
+        calories[4] = UserCalorie;
+        calories[5] = UserCalorie;
+        calories[6] = UserCalorie;
+
+      /*  if (Tuesday.checked == true) {
             calories[1] = UserCalorie;
             alert("Your updated Calorie details are: " + calories);
         }
@@ -51,21 +68,20 @@ window.onload = function() {
             document.getElementById('F').checked = false;
             document.getElementById('S').checked = false;
             document.getElementById('Su').checked = false;
-        }
+        } */
        // alert("Your updated Calorie details are: " + calorie);
     }
-    document.getElementsById('avg').onclick = showAverageCalories;
+    document.getElementsById('avg').onmouseover = showAverageCalories;
     function showAverageCalories() {
         var avg = 0;
         for (var i=0;i<calories.length;i++) {
             avg += calories[i];
         }
         avg = avg / calories.length;
-        document.getElementsById('avg').css('background-color', 'transparent');
-        document.getElementsById('avg').css('color', 'green');
-        document.getElementsById('avg').innerHTML = avg;
+        document.getElementsById('avg').addClass('#new-class');
+        document.getElementsById('avg').value = avg;
     }
-    document.getElementsById('show_max').mouseOver = showMax;
+    document.getElementsById('show_max').onmouseover = showMax;
     function showMax() {
         var max = calories[0];
         for(var i=0;i<calories.length-1;i++) {

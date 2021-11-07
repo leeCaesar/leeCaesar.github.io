@@ -29,10 +29,25 @@ input{
 }
 
 /*add styles*/
+.btn {
+    width: 92%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
 .btn:hover {
     background: rgb(201, 201, 201);
     cursor: pointer;
 }
 .avg {
     background-color: gray;
+}
+#new-class {
+    background-color: transparent;
+    color: lightgreen;
+}
+#show_max {
+    cursor: pointer;
 }

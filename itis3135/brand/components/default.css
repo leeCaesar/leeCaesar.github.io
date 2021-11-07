@@ -5,16 +5,20 @@ html, body {
     background-color: rgba(197, 197, 197, 0.6);
 	text-align: center;
 }
-.nav li {
+a {
 	display: inline;
 	font-size: 12px;
 	padding: 0 1%;
 }
-.nav a {
+ a {
 	text-decoration: none;
 }
-.nav a:hover {
+a:hover {
 	background-color: rgba(0,0,0, .3);
+}
+.contact-header {
+	font-style: italic;
+	font-size: 2em;
 }
 .made-by p{
     display: inline;
