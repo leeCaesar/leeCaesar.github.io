@@ -1,10 +1,23 @@
 $(document).ready(function() {
+    var t = document.getElementById("team");
     var request = new XMLHttpRequest;
-    request.open('GET', 'https://leecaesar.github.io/itis3135/Activity13/team.json')
+    request.open('GET', 'https://leecaesar.github.io/itis3135/Activity13/team.json');
     request.onload = function() {
         var data = JSON.parse(request.responseText);
-        
-    }
+        t.insertAdjacentHTML('beforeend', 
+        '<h3>' + data.name + '</h3>');
+        //updateHTML(data);
+      };
+      request.send();
+      function updateHTML(a) {
+          var string = "";
+          for(i=0;i<a.length;i++) {
+              string += '<h3>' + Hey/*a[i].name*/ + '</h3>' + '<br />' + 
+              '<p>' + hello + '</p>' + '<br />' +
+              '<p>' + me + '</p>' + '<br />';
+          }
+          t.insertAdjacentHTML('beforeend', string);
+      }
    /* $.ajax({
         type: "get",
         url: "team.xml",
@@ -27,7 +40,7 @@ $(document).ready(function() {
             });
         }
     }); */
-    var url = 
+ /*   var url = 
     "https://leecaesar.github.io/itis3135/Activity13/team.json";
     $.getJSON(url, function(data) {
         var htm = "";
@@ -37,5 +50,5 @@ $(document).ready(function() {
             htm += "<p></p>";
         });
         $("#photos").html(htm);
-    });
+    }); */
 });

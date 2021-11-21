@@ -125,6 +125,9 @@ aside img {
 	text-decoration: none;
 	padding: .5em 0 .5em 1em;
 }
+#nav_list li a:hover {
+	cursor: pointer;
+}
 
 /* the styles for the footer */
 footer {
