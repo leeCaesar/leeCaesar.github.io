@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var t = document.getElementById("team");
+ /*   var t = document.getElementById("team");
     var request = new XMLHttpRequest;
     request.open('GET', 'https://leecaesar.github.io/itis3135/Activity13/team.json');
     request.onload = function() {
@@ -12,12 +12,12 @@ $(document).ready(function() {
       function updateHTML(a) {
           var string = "";
           for(i=0;i<a.length;i++) {
-              string += '<h3>' + Hey/*a[i].name*/ + '</h3>' + '<br />' + 
+              string += '<h3>' + Heya[i].name + '</h3>' + '<br />' + 
               '<p>' + hello + '</p>' + '<br />' +
               '<p>' + me + '</p>' + '<br />';
           }
           t.insertAdjacentHTML('beforeend', string);
-      }
+      } */
    /* $.ajax({
         type: "get",
         url: "team.xml",
@@ -40,15 +40,17 @@ $(document).ready(function() {
             });
         }
     }); */
- /*   var url = 
+    var url = 
     "https://leecaesar.github.io/itis3135/Activity13/team.json";
     $.getJSON(url, function(data) {
-        var htm = "";
-        $.each(data.items, function(i, item)  {
-            htm += "<h2>" + item.title + "<h2>";
-            htm += "<img src=" + item.media.m + ">";
-            htm += "<p></p>";
+        $.each(data, function()  {
+            $.each(this, function(key, value) {
+                $("#team").append(
+                    "<h3>" + value.name + "<h3><br />" + 
+                    value.title + "<br />" +
+                    value.bio + "<br />"
+                );
+            });
         });
-        $("#photos").html(htm);
-    }); */
+    });
 });
