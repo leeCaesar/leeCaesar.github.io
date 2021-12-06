@@ -7,7 +7,31 @@
     <title>Main</title>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        /*$( function() {
+            $( "#datepicker" ).datepicker();
+        }); */
+        $( function() {
+            flatpickr('#datepicker', {
+                    mode: "range",
+                    minDate: "today",
+                    dateFormat: "Y-m-d",
+                    disable: [
+                    function(date) {
+                        return !(date.getDate() % 8);
+                    }
+                ]
+            });
+        });
+        $( function() {
+            $( document ).tooltip();
+        });
+    </script>
 </head>
 <body>
     <div class="main-header">
@@ -27,19 +51,18 @@
     </div>
     <main class="main-book">
         <form>
-            <header>Book a lesson</header>
+            <header class="book-header2">Book a lesson</header><br /><br />
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter name here">
-            <header>Contact</header>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="enter your email">
-            <label for="Phone">Phone Number</label>
-            <input type="number" id="Phone" name="Phone">
-            <label for="day">Select a day</label>
-            <input type="date" id="date" name="date">
-            <label for="time">Select a time</label>
-            <input type="time" id="time" name="time">
-            <button class="btn" id="Submit" type="submit">Submit</button>
+            <header class="book-header">Contact</header>
+            <p><label for="email">Email</label><!--This is the appropriate html to accomodate the tooltip widget that also is being used in the email tab-->
+            <input type="text" id="email" name="email" title="This is what we will use to keep you updated on community events" placeholder="enter your email"></p><br /><br />
+            <p><label for="Phone">Phone Number</label>
+            <input type="number" id="Phone" name="Phone" title="This will be used primarily to contact you"></p><br /><br />
+            <p>Select a day<input type="text" id="datepicker"></p><!--This is the appropriate html to accomodate the calander plugin for styling-->
+         <!--   <label for="time">Select a time</label>
+            <input type="time" id="time" name="time"> -->
+            <button class="btn" id="Submit" type="submit">Submit</button> 
         </form>
     </main>
     <div class="main-header">

@@ -7,7 +7,13 @@
     <title>Main</title>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <link rel="stylesheet" href="style.css" />
+    <script>
+        $(function() {
+            ScrollReveal().reveal('.headline', { delay: 500});
+        });
+    </script>
 </head>
 <body>
     <div class="main-header">
@@ -26,10 +32,12 @@
         </nav>
     </div>
     <main class="main-feedback">
-        <h1>Customer responces</h1>
-        <p><h5>James taylor says<br /></h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus feugiat elit in viverra. Praesent sapien leo, pharetra vel condimentum rhoncus, sollicitudin eget tortor. Ut tincidunt eros id dui blandit, eget lacinia libero lobortis. Praesent non diam interdum, placerat libero a, tincidunt elit. In efficitur, nunc eu tristique iaculis, est velit ullamcorper diam, aliquam vestibulum risus urna vestibulum tortor. Morbi ac augue eu sapien vestibulum luctus. Aenean in metus dui. Nam vel hendrerit nulla, et volutpat metus. In ac iaculis ipsum. Aliquam efficitur arcu eu nunc placerat auctor.
-        </p>
+        <div class="header"><!--This is the html to accomodate the scroll reveal widget which hides html and reveals is as the user scrolls through the page-->
+            <h1>Customer responces</h1>
+            <p><h5>James taylor says<br /></h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus feugiat elit in viverra. Praesent sapien leo, pharetra vel condimentum rhoncus, sollicitudin eget tortor. Ut tincidunt eros id dui blandit, eget lacinia libero lobortis. Praesent non diam interdum, placerat libero a, tincidunt elit. In efficitur, nunc eu tristique iaculis, est velit ullamcorper diam, aliquam vestibulum risus urna vestibulum tortor. Morbi ac augue eu sapien vestibulum luctus. Aenean in metus dui. Nam vel hendrerit nulla, et volutpat metus. In ac iaculis ipsum. Aliquam efficitur arcu eu nunc placerat auctor.
+            </p>
+        </div>
         <form>
             <fieldset>
                 <legend>Make a responce</legend>
