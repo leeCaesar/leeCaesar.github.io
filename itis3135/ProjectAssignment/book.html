@@ -29,7 +29,13 @@
             });
         });
         $( function() {
-            $( document ).tooltip();
+            $( document ).tooltip({
+                position: {
+                    my: "left top",
+                    at: "right+5 top-5",
+                    collision: "none"
+                }
+            });
         });
     </script>
 </head>
@@ -62,6 +68,26 @@
             <p>Select a day<input type="text" id="datepicker"></p><!--This is the appropriate html to accomodate the calander plugin for styling-->
          <!--   <label for="time">Select a time</label>
             <input type="time" id="time" name="time"> -->
+            <script>
+                $(function() {
+                    document.getElementById('#DD').
+                    addEventListener("click", function() {
+                        document.getElementById('#button')
+                        .innerHTML = document.getElementById("#DD").innerText;
+                    });
+                });
+            </script>
+
+            <div class="dropdown">
+                <button class="dropbtn" id="button">Select time</button>
+                <div class="dropdown-content">
+                <a id="DD" href="#">10:00AM</a>
+                <a id="DD" href="#">11:00AM</a>
+                <a id="DD" href="#">12:00PM</a>
+                <a id="DD" href="#">1:00PM</a>
+                <a id="DD" href="#">2:00PM</a>
+                </div>
+              </div>
             <button class="btn" id="Submit" type="submit">Submit</button> 
         </form>
     </main>
