@@ -42,6 +42,18 @@ body {
 .contact-div {
 	display: inline;
 }
+.aboutme-links{
+	text-align: center;
+	display: inline;
+}
+.aboutme-links a{
+	padding: .6em;
+	color: linear-gradient(45deg, #287094, #023246);;
+	text-decoration: none;
+}
+.aboutme-links a:hover {
+	background-color: #287094;
+}
 .book-header {
 	font-size: 1.5em;
 	font-style: italic;
