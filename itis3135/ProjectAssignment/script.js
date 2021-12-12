@@ -1,6 +1,6 @@
 $(document).ready(function() {
     const url = "https://leecaesar.github.io/itis3135/ProjectAssignment/aboutme.json";
-
+    const Url = "https://leecaesar.github.io/itis3135/ProjectAssignment/index.json";
     $.getJSON(url, function(data) {
         $.each(data, function()  {
             $.each(this, function(key, value) {
@@ -17,4 +17,16 @@ $(document).ready(function() {
             });
         });
     });
+    $.getJSON(Url, function(data) {
+        $.each(data, function()  {
+            $.each(this, function(key, value) {
+                $("#nav").append(
+                        '<div class="aboutme-links">' + 
+                        '<a href="' + value.IG + '">Instagram  </a>' +
+                        '<a href="' + value.SC + '">Soundcloud</a>' +
+                        '</div>'
+                    );
+                });
+            });
+        });
 });

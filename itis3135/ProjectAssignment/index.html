@@ -30,20 +30,6 @@
             <img src="" alt="placeholder for photo"/>
             <p></p>
         </div>
-    <script>
-        $.getJSON("https://leecaesar.github.io/itis3135/ProjectAssignment/index.json", function(data) {
-        $.each(data, function()  {
-            $.each(this, function(key, value) {
-                $("#nav").append(
-                        '<div class="aboutme-links">' + 
-                        '<a href="' + value.IG + '">Instagram  </a>' +
-                        '<a href="' + value.SC + '">Soundcloud</a>' +
-                        '</div>'
-                    );
-                });
-            });
-        });
-    </script>
         <div id="nav">
         <!--    <ul>
                 <li><a href="https://www.spotify.com/us/" target="_blank"><img src="SPo.png" width="30" height="30"></a></li>
