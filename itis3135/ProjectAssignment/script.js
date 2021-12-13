@@ -14,7 +14,7 @@ $(document).ready(function() {
                         '<a href="' + value.SC + '">Soundcloud</a>' +
                         '</div>'
                     );
-                $("#nav").append(
+                $("#index").append(
                    '<div class="aboutme-links">' + 
                         '<a href="' + value.IG + '">Instagram  </a>' +
                         '<a href="' + value.SC + '">Soundcloud</a>' +
