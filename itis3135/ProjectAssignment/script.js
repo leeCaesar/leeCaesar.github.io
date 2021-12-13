@@ -9,8 +9,8 @@ $(document).ready(function() {
                         '<h3>' + value.title + '</h3><br />' + 
                         '<p>' + value.about + '</p><br />' +
                         '<div class="aboutme-links">' + 
-                        '<a href="' + value.IG + '">Instagram  </a>' +
-                        '<a href="' + value.SC + '">Soundcloud</a>' +
+                        '<a href="' + value.IG + '" target="_blank">Instagram  </a>' +
+                        '<a href="' + value.SC + '" target="_blank">Soundcloud</a>' +
                         '</div>'
                     );
             });
